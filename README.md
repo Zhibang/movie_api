@@ -1,2 +1,2 @@
 # movie_api
-First API example with Node JS
+API example with Node JS
