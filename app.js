@@ -10,7 +10,7 @@ app.get("/",function(req,res){
 
 app.get("/results", function(req,res){
 	var name=req.query.search;
-	var url="http://www.omdbapi.com/?apikey=thewdb&s="+name;
+	var url="http://www.omdbapi.com/?apikey=yourkey&s="+name;
 	request(url, function(err,response,body){
 		if(!err && response.statusCode==200){
 			var data=JSON.parse(body);
